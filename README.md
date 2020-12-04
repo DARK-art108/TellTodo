@@ -103,9 +103,9 @@ Now, your FaunaDB is setup and ready to use!!
 
 The bot accepts the following commands:
 
-`/start`: To start the bot
-`/add_todo`: To add todo or task
-`/list_todo`: To list the todo or task with status
+* `/start`: To start the bot
+* `/add_todo`: To add todo or task
+* `/list_todo`: To list the todo or task with status
 
 You can add as many task or todo you want!!
 
