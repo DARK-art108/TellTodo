@@ -122,13 +122,6 @@ You can see your queries and lastcmd's in faunadb dashboard in JSON formats, you
 
 ***Ping our existing 24 * 7 Active bot using @faunadbtest in telegram (for testing purpose only)!!***
 
-[![Build Status](https://travis-ci.com/DARK-art108/TellTodo.svg?branch=main)](https://travis-ci.com/DARK-art108/TellTodo)
-![GitHub forks](https://img.shields.io/github/forks/DARK-art108/TellTodo?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/DARK-art108/TellTodo?style=social)
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
 
 
 
