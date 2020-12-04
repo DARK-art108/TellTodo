@@ -113,7 +113,7 @@ For executing the bot first time you need to drop a `/start` cmd so that your en
 
 You can see your queries and lastcmd's in faunadb dashboard in JSON formats, you can even query the database using String,Number or FQL.
 
-***Ping our existing 24*7 Active bot using @faunadbtest in telegram (for testing purpose only)!!***
+***Ping our existing 24 * 7 Active bot using @faunadbtest in telegram (for testing purpose only)!!***
 
 
 
