@@ -10,7 +10,18 @@ from faunadb import query as q
 from faunadb.objects import Ref
 from faunadb.client import FaunaClient
 import os
+
 import config
+
+from sys import argv
+
+''' Handling test '''
+if len(argv) > 1:
+    if argv[1] == 'test':
+        print('Imports successful!')
+        exit(0)
+        
+
 
 """ Handling the PORT for deployment """
 
