@@ -10,13 +10,14 @@ from faunadb import query as q
 from faunadb.objects import Ref
 from faunadb.client import FaunaClient
 import os
+import config
 
 """ Handling the PORT for deployment """
 
 PORT = int(os.environ.get('PORT', 5000))
 
 """ Attach your telegram and faunadb tokens this is for only testing purpose """
-import config
+
 
 
 updater = Updater(token=telegram_bot_token, use_context=True)
