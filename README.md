@@ -68,15 +68,15 @@ Give the name to the collection as `users` as users name is default with our bot
 After a sucessfull setup your Index and collection will look like:
 
 <p align="center">
-  <img width="700" height="400" src="utils/index1.png">
+  <img width="700" height="400" src="utils/index1.PNG">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="utils/index2.png">
+  <img width="700" height="400" src="utils/index2.PNG">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="utils/fauna1.png">
+  <img width="700" height="400" src="utils/fauna1.PNG">
 </p>
 
 
