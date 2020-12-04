@@ -9,7 +9,14 @@ from telegram.ext import MessageHandler, Filters
 from faunadb import query as q
 from faunadb.objects import Ref
 from faunadb.client import FaunaClient
+from sys import argv
 import os
+
+if len(argv) > 1:
+    if argv[1] == 'test':
+        print('Imports successful!')
+        exit(0)
+        
 
 """ Handling the PORT for deployment """
 
