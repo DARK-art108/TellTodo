@@ -10,6 +10,7 @@ from faunadb import query as q
 from faunadb.objects import Ref
 from faunadb.client import FaunaClient
 import os
+from config.py import telegram_bot_token, fauna_secret
 from sys import argv
 
 ''' Handling test '''
@@ -24,8 +25,7 @@ if len(argv) > 1:
 PORT = int(os.environ.get('PORT', 5000))
 
 """ Attach your telegram and faunadb tokens this is for only testing purpose """
-telegram_bot_token = "1482533514:AAGEOALGFAo1JEAISAT7VK0XaNQDxaXu65Q"
-fauna_secret = "fnAD8KI1XhACDTkH8eXJ1mzDAmlHJMc0vqwlGg1k"
+"""tokens are hidden"""
 
 
 updater = Updater(token=telegram_bot_token, use_context=True)
