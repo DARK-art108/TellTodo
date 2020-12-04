@@ -16,8 +16,7 @@ import os
 PORT = int(os.environ.get('PORT', 5000))
 
 """ Attach your telegram and faunadb tokens this is for only testing purpose """
-telegram_bot_token = "1482533514:AAGEOALGFAo1JEAISAT7VK0XaNQDxaXu65Q"
-fauna_secret = "fnAD8KI1XhACDTkH8eXJ1mzDAmlHJMc0vqwlGg1k"
+import config
 
 
 updater = Updater(token=telegram_bot_token, use_context=True)
