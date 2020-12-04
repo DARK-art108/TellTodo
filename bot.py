@@ -1,5 +1,5 @@
 """ Importing the modules for timestaps, telegram handeler, and faunadb """
-
+import config
 import pytz
 import telegram
 from datetime import datetime
@@ -9,10 +9,9 @@ from telegram.ext import MessageHandler, Filters
 from faunadb import query as q
 from faunadb.objects import Ref
 from faunadb.client import FaunaClient
-import os
 from sys import argv
+import os
 
-''' Handling test '''
 if len(argv) > 1:
     if argv[1] == 'test':
         print('Imports successful!')
@@ -23,14 +22,14 @@ if len(argv) > 1:
 
 PORT = int(os.environ.get('PORT', 5000))
 
-""" Attach your telegram and faunadb tokens this is for only testing purpose """
-telegram_bot_token = "1482533514:AAGEOALGFAo1JEAISAT7VK0XaNQDxaXu65Q"
-fauna_secret = "fnAD8KI1XhACDTkH8eXJ1mzDAmlHJMc0vqwlGg1k"
+# """ Attach your telegram and faunadb tokens this is for only testing purpose """
+# telegram_bot_token = "1482533514:AAGEOALGFAo1JEAISAT7VK0XaNQDxaXu65Q"
+# fauna_secret = "fnAD8KI1XhACDTkH8eXJ1mzDAmlHJMc0vqwlGg1k" 
 
 
-updater = Updater(token=telegram_bot_token, use_context=True)
+updater = Updater(token=config.telegram_bot_token, use_context=True)
 dispatcher = updater.dispatcher
-client = FaunaClient(secret=fauna_secret)
+client = FaunaClient(secret=config.fauna_secret)
 
 
 """ Start func which handels the /start cmd of the bot: to add todo you first need to start the bot """
@@ -144,9 +143,9 @@ dispatcher.add_handler(MessageHandler(Filters.text, echo))
 
 updater.start_webhook(listen="0.0.0.0",
                       port=int(PORT),
-                      url_path=telegram_bot_token,
+                      url_path=config.telegram_bot_token,
                       )
-updater.bot.setWebhook('https://faunadbbot.herokuapp.com/'+telegram_bot_token)
+updater.bot.setWebhook('https://faunadbbot.herokuapp.com/'+config.telegram_bot_token)
 
 # Run the bot until you press Ctrl-C or the process receives SIGINT,
 # SIGTERM or SIGABRT. This should be used most of the time, since
