@@ -79,6 +79,46 @@ After a sucessfull setup your Index and collection will look like:
   <img width="700" height="400" src="utils/fauna1.PNG">
 </p>
 
+After setting up the whole database, now you need to get the `Security Key` so go to the `Security` section and get your `Security Key`.
+
+Now, your FaunaDB is setup and ready to use!!
+
+### Create your Telegram Bot
+
+* Ping @BotFather on Telegram.
+* Send the message /start
+* Read the instructions and make a new bot for your personal testing by /newbot command.
+* Give a suitable name and username to the bot.
+* You’ll get your bot API token as 89xxxxxxx:xxxxxxxxxxxxAAHmf32ZghS-cqxBLfnkUx9VwoXeOIRlnUQ.
+* Replace and add your telegram_token_key = "YOUR_TELEGRAM_KEY" in `config.py` file.
+* Replace and add your fauna_secret = "your_fauna_secert" in `config.py` file.
+
+### Build and Execute Bot
+
+* Install all dependencies using `pip install -r requirements.txt`
+* Run your bot using `python3 bot.py or python bot.py`
+* Ping your bot at @<username_set>. You’ll find the bot up and running.
+
+### Guide to Run TellTodo Bot
+
+The bot accepts the following commands:
+
+`/start`: To start the bot
+`/add_todo`: To add todo or task
+`/list_todo`: To list the todo or task with status
+
+You can add as many task or todo you want!!
+
+For executing the bot first time you need to drop a `/start` cmd so that your entry will be done in the faunadb,after that you can proceed other cmd's of adding , deleting,updating and listing todo's.
+
+You can see your queries and lastcmd's in faunadb dashboard in JSON formats, you can even query the database using String,Number or FQL.
+
+***Ping our existing 24*7 Active bot using @faunadbtest in telegram (for testing purpose only)!!***
+
+
+
+
+
 
 
 
