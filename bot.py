@@ -75,8 +75,8 @@ def list_todo(update, context):
             task_status = "Completed"
         else:
             task_status = "Not Completed"
-        task_message += f' {task["data"]["todo"]}\nStatus: {task_status}\nUpdate Link: /update_{i.id()}\nDelete Link: /delete_{i.id()}\n\n'    
-
+        task_message += f' {task["data"]["todo"]}\nStatus: {task_status}\nUpdate Link: /update_{i.id()}\nDelete Link: /delete_{i.id()}\n\n'
+                    
     if task_message == "":
         task_message = "You have not added any task, do that with /add_todo 😇"
     context.bot.send_message(chat_id=chat_id, text=task_message)
